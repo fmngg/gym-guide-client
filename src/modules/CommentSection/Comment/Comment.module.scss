@@ -1,0 +1,40 @@
+.comment {
+  margin-bottom: 35px;
+  border-left: 1px solid #bbb;
+  padding-left: 20px;
+  .commentUpper {
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+    .name {
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+    }
+    .image {
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+
+      img {
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &:hover {
+      .name {
+        color: #47a6ff;
+      }
+
+      .image {
+        border-radius: 5px;
+      }
+    }
+  }
+}

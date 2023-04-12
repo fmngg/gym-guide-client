@@ -1,0 +1,24 @@
+.sectionSelector {
+  background-color: #fff;
+  display: flex;
+  .section {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  .active {
+    color: #fff;
+    background-color: #47a6ff;
+
+    &:hover {
+      color: #fff;
+      background-color: #47a6ff;
+    }
+  }
+}

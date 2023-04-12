@@ -1,0 +1,16 @@
+.commentInput {
+  display: flex;
+  align-items: center;
+
+  .send {
+    width: 25px;
+    height: auto;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: #47a6ff;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+  background-color: #f7f8f8;
+  color: #bbb;
+  border-radius: 30px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-radius: 10px;
+    background-color: #47a6ff;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: 10px;
+    background-color: #47a6ff;
+    color: #fff;
+  }
+}

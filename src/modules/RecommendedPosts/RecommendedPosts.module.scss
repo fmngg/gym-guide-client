@@ -1,0 +1,38 @@
+.recommendedPosts {
+  position: relative;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 20px 0px;
+  padding: 40px 80px;
+  height: 340px;
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .posts {
+    justify-content: space-between;
+    padding: 10px 0px;
+    position: relative;
+    overflow-x: scroll;
+    display: flex;
+  }
+
+  ::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+}

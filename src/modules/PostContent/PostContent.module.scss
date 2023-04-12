@@ -1,0 +1,73 @@
+.postPage {
+  position: relative;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 20px 0px;
+  padding: 40px 80px;
+
+  .arrow {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #47a6ff;
+    }
+  }
+
+  h1 {
+    font-size: 46px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    display: flex;
+    color: #bbb;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-between;
+
+    .infoLeft {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .stats {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+
+      p {
+        display: flex;
+        align-items: center;
+        margin: 0px 5px 0px 10px;
+      }
+    }
+
+    .category {
+      margin-right: 10px;
+      color: #06d6a0;
+      font-weight: 600;
+      font-size: 24px;
+      width: fit-content;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 500px;
+    margin: 20px 0px;
+    img {
+      object-fit: cover;
+    }
+  }
+}

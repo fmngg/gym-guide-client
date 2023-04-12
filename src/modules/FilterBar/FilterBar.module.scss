@@ -1,0 +1,31 @@
+.filter {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  .filterLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .searchButton {
+      cursor: pointer;
+      width: 30px;
+      margin: 0px 10px;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #47a6ff;
+      }
+    }
+  }
+  .filterRight {
+    display: flex;
+
+    div {
+      margin-right: 5px;
+    }
+  }
+}

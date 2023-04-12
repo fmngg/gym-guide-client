@@ -1,0 +1,102 @@
+.registerPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .redirectLabel {
+    display: flex;
+    color: #bbb;
+    margin-bottom: 40px;
+    p {
+      margin-right: 5px;
+    }
+    .redirect {
+      color: #47a6ff;
+    }
+  }
+
+  .register {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+
+    .activeImage {
+      border: 2px solid #47a6ff;
+      position: relative;
+      margin-bottom: 40px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: #bbb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease-in-out;
+
+      .inputtedImage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        .cross {
+          width: 30px;
+          height: auto;
+          cursor: pointer;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          color: #47a6ff;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .image {
+      border: 2px solid #fff;
+      position: relative;
+      margin-bottom: 40px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: #bbb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        border-color: #47a6ff;
+      }
+
+      .input {
+        opacity: 0;
+        cursor: pointer;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+
+      .noImage {
+        color: #fff;
+        width: 40px;
+        height: auto;
+      }
+    }
+  }
+}

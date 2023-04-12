@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  .bold {
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .regular {
+    font-weight: normal;
+  }
+
+  &:hover {
+    .bold {
+      color: #47a6ff;
+    }
+  }
+}
