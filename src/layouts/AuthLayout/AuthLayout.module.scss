@@ -1,0 +1,56 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-image: url('../../assets/set-of-people-doing-workout-vector.jpg');
+  background-size: contain;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+  &:hover {
+    &::before {
+      filter: blur(60px);
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(25deg, #fc466b 21%, #3f5efb 86%);
+    transform: translate3d(0px, 0px, 0) scale(1);
+    filter: blur(40px);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+    transition: all 0.3s ease-in-out;
+  }
+  .layout {
+    padding: 50px;
+    border-radius: 50px;
+    background-color: var(--body-color);
+    width: 600px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

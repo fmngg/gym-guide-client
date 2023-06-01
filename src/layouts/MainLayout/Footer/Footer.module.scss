@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid var(--gray);
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    color: var(--scroll-hover-color);
+  }
+
+  .media {
+    .mediaLink {
+      margin-left: 20px;
+      width: 25px;
+      height: auto;
+      color: var(--scroll-hover-color);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+}

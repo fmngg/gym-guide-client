@@ -1,0 +1,33 @@
+.theme {
+  cursor: pointer;
+  height: 25px;
+  width: auto;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #ffd166;
+  }
+}
+
+.loader {
+  overflow-y: hidden;
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -100vh;
+  left: 0;
+  background-color: #64b5f6;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.3s ease-in-out;
+
+  h1 {
+    color: #fff;
+  }
+}
+
+.active {
+  top: 0px;
+}

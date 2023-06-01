@@ -1,0 +1,21 @@
+.loader {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    background-color: var(--body-color);
+
+    text {
+      font-weight: bold;
+      stroke: var(--blue);
+    }
+  }
+}

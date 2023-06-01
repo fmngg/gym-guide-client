@@ -1,0 +1,27 @@
+.sectionSelector {
+  margin: 30px 0px;
+  display: flex;
+  gap: 10px;
+  .section {
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+
+    &:hover {
+      background-color: var(--light-gray);
+    }
+  }
+
+  .active {
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 5px;
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--blue);
+    }
+  }
+}

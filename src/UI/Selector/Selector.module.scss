@@ -1,0 +1,91 @@
+.selector {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  .selectorTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--gray);
+
+    .arrow {
+      margin-left: 10px;
+      transition: all 0.5s ease-in-out;
+      width: 20px;
+      height: auto;
+    }
+
+    &:hover {
+      border-color: var(--blue);
+
+      .arrow {
+        color: var(--blue);
+      }
+    }
+  }
+
+  .selectorMenu {
+    width: 100%;
+    background-color: var(--white);
+    right: 0px;
+    position: absolute;
+    max-width: 300px;
+    max-height: 0px;
+    list-style: none;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--gray);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+    li {
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--light-gray);
+        color: var(--blue);
+      }
+    }
+  }
+}
+
+.selectorActive {
+  .selectorTitle {
+    border-color: var(--blue);
+    .arrow {
+      transform: rotate(180deg);
+      color: var(--blue) !important;
+    }
+  }
+
+  .selectorMenu {
+    max-height: 400px;
+    max-width: 300px;
+    list-style: none;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--gray);
+    overflow: hidden;
+
+    li {
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--light-gray);
+        color: var(--blue);
+      }
+    }
+  }
+}

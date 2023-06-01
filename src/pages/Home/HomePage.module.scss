@@ -1,0 +1,225 @@
+.home {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+
+  .post {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    .description {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      p {
+        font-size: 20px;
+      }
+
+      button {
+        cursor: pointer;
+        font-size: 20px;
+        border: 0;
+        background-color: var(--background-blue);
+        color: var(--blue);
+        border: 2px solid var(--background-blue);
+        border-radius: 30px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+
+        &:hover {
+          border-radius: 10px;
+          background-color: var(--background-blue);
+          color: var(--blue);
+          border: 2px solid var(--background-blue);
+        }
+      }
+    }
+    .imgBlock {
+      width: 50%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        z-index: -1;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        background-color: var(--blue);
+      }
+    }
+  }
+
+  .exercise {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    .description {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      p {
+        font-size: 20px;
+      }
+
+      button {
+        cursor: pointer;
+        font-size: 20px;
+        border: 0;
+        background-color: var(--background-red);
+        color: var(--red);
+        border: 2px solid var(--background-red);
+        border-radius: 30px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+
+        &:hover {
+          border-radius: 10px;
+          background-color: var(--background-red);
+          color: var(--red);
+          border: 2px solid var(--background-red);
+        }
+      }
+    }
+    .imgBlock {
+      width: 50%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        z-index: -1;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        background-color: var(--red);
+      }
+    }
+  }
+
+  .registrationAd {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 50px;
+    border-radius: 50px;
+    width: 700px;
+    height: 300px;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+    &:hover {
+      &::before {
+        filter: blur(60px);
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(25deg, #fc466b 21%, #3f5efb 86%);
+      transform: translate3d(0px, 0px, 0) scale(1);
+      filter: blur(40px);
+      transition: opacity 0.3s;
+      border-radius: inherit;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      border-radius: inherit;
+      transition: all 0.3s ease-in-out;
+    }
+
+    color: #fff;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    ul {
+      li {
+        font-size: 18px;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 16px;
+      border: 0;
+      background-color: #fff;
+      color: black;
+      border-radius: 30px;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out;
+      width: fit-content;
+      &:hover {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .about {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      border: 0;
+      background-color: var(--light-gray);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .arrow {
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        .arrow {
+          transform: translateX(7px);
+        }
+      }
+    }
+  }
+}

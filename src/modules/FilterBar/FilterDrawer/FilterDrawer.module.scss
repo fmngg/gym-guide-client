@@ -1,0 +1,105 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+
+  .drawer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 420px;
+    height: 100%;
+    right: 0;
+    background: var(--white);
+    box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    overflow-y: scroll;
+
+    .drawerHeader {
+      text-align: right;
+      .close {
+        z-index: 100;
+        color: var(--text);
+        width: 40px;
+        background-color: var(--body-color);
+        border-radius: 10px;
+        height: auto;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: var(--light-gray);
+        }
+      }
+    }
+
+    .section {
+      margin-bottom: 20px;
+      .title {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          margin-right: 10px;
+        }
+
+        div {
+          width: 100%;
+          border-bottom: 2px solid var(--gray);
+        }
+      }
+
+      .list {
+        height: fit-content;
+        max-height: 200px;
+        overflow-y: scroll;
+        p {
+          padding: 5px 10px;
+          border-radius: 20px;
+          margin-bottom: 10px;
+          background-color: var(--body-color);
+          width: fit-content;
+          font-size: 18px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: var(--light-gray);
+          }
+        }
+
+        .selected {
+          background-color: var(--blue);
+          color: #fff;
+          &:hover {
+            background-color: var(--blue);
+          }
+        }
+      }
+    }
+  }
+}
+
+.overlayVisible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+
+  .drawer {
+    transform: translateX(0);
+  }
+}

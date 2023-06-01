@@ -1,0 +1,48 @@
+.favourites {
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  flex: auto;
+}
+
+.noResult {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+
+  svg {
+    fill: var(--red);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: #fff;
+    display: block;
+    background-color: var(--body-color);
+    margin-bottom: 20px;
+    animation: bounce 1s ease infinite;
+  }
+}
+
+@keyframes bounce {
+  20% {
+    transform: scale(1.2);
+  }
+  30%,
+  50% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  40% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+}

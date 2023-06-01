@@ -1,0 +1,21 @@
+.CodeMirror {
+  background-color: var(--body-color);
+  border-color: var(--gray) !important;
+  border-radius: 0px 0px 20px 20px !important;
+  color: var(--text);
+  font-size: 24px !important;
+}
+
+.editor-toolbar {
+  background-color: var(--body-color);
+  border-color: var(--gray) !important;
+  border-radius: 20px 20px 0px 0px;
+
+  button {
+    color: var(--text);
+
+    &:hover {
+      background-color: var(--light-gray);
+    }
+  }
+}

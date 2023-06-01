@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  font-size: 20px;
+  border: 0;
+  background-color: var(--body-color);
+  color: var(--gray);
+  border-radius: 30px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: var(--body-color);
+    color: var(--gray);
+    border-radius: 30px;
+  }
+}
+
+.active {
+  outline: none;
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+}

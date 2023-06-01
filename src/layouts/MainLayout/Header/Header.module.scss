@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  flex: none;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 20px;
+
+  .headerLeft {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .sections {
+      display: flex;
+      gap: 5px;
+      p {
+        text-transform: uppercase;
+        cursor: pointer;
+        color: var(--gray);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    .button {
+      margin-left: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        color: var(--blue);
+      }
+    }
+
+    .logout {
+      margin-left: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        color: var(--red);
+      }
+    }
+  }
+}

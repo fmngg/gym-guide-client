@@ -1,0 +1,12 @@
+.commentSection {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 30px;
+  margin: 20px 0px;
+  padding: 40px 80px;
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+}

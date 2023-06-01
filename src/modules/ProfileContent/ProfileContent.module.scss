@@ -1,0 +1,29 @@
+.profile {
+  .info {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      flex: auto;
+      text-align: center;
+      font-size: 50px;
+    }
+    .image {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}

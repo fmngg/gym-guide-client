@@ -1,0 +1,28 @@
+.commentInput {
+  display: flex;
+  align-items: center;
+
+  .send {
+    width: 25px;
+    height: auto;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--blue);
+    }
+  }
+}
+
+.error {
+  width: 100%;
+  background-color: var(--background-blue);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}

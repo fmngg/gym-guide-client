@@ -1,0 +1,40 @@
+.categorySelector {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--gray);
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  .category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--blue);
+    p {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: var(--body-color);
+      color: var(--text);
+      padding: 10px 15px;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: var(--light-gray);
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .active {
+    p {
+      background-color: var(--blue);
+      color: #fff;
+
+      &:hover {
+        background-color: var(--blue);
+        color: #fff;
+      }
+    }
+  }
+}

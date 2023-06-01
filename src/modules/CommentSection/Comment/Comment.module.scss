@@ -1,0 +1,87 @@
+.comment {
+  margin-bottom: 35px;
+  border-left: 1px solid var(--gray);
+  padding: 10px 20px;
+  &:hover {
+    background-color: var(--light-gray);
+  }
+  .commentUpper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      cursor: pointer;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .name {
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+      }
+      .image {
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        img {
+          object-fit: cover;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      &:hover {
+        .name {
+          color: var(--blue);
+        }
+
+        .image {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 10px;
+    .delete {
+      margin-top: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: 0;
+      background-color: var(--body-color);
+      color: var(--gray);
+      border-radius: 30px;
+      padding: 5px 10px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: var(--background-red);
+        color: var(--red);
+        border-radius: 5px;
+      }
+    }
+
+    .button {
+      margin-top: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: 0;
+      background-color: var(--body-color);
+      color: var(--gray);
+      border-radius: 30px;
+      padding: 5px 10px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: var(--background-blue);
+        color: var(--blue);
+        border-radius: 5px;
+      }
+    }
+  }
+}
